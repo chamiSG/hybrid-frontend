@@ -1,0 +1,208 @@
+.treasury-page {
+    background-color: #212121;
+
+    h1,
+    h2 {
+        font-family: Montserrat Bold;
+        font-weight: 800;
+    }
+
+    .text-secondary {
+        color: #ddd;
+    }
+
+    .text-normal-font {
+        font-family: Montserrat Bold;
+        font-weight: 600;
+    }
+    
+    .treasury_stat-block {
+        padding: 1rem;
+    }
+
+    .treasury_stat-block.total.w--current {
+        background-size: contain;
+    }
+
+    .treasury_tab-content-wrapper {
+        min-height: 21rem;
+    }
+
+    .treasury-tabs_menu {
+        -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    }
+
+    .treasury_stat-block {
+        display: flex;
+        padding: 2rem;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        grid-row-gap: 8px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: hsla(0, 0%, 100%, 0.2);
+        border-radius: 8px;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    
+    .treasury_stat-block.w--current {
+        background-color: hsla(0, 0%, 100%, 0.05);
+    }
+    
+    .treasury_stat-block.total {
+        // background-image: url('../images/pie-chart_placeholder.svg');
+        background-position: 50% 50%;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+
+    .treasury_chart-block {
+        -ms-grid-column: 3;
+        grid-column-start: 3;
+        -ms-grid-column-span: 2;
+        grid-column-end: 5;
+        -ms-grid-row: 1;
+        grid-row-start: 1;
+        -ms-grid-row-span: 2;
+        grid-row-end: 3;
+    }
+
+    .treasury-tabs_tab-pane {
+        height: 100%;
+        margin-top: 4rem;
+    }
+    .w-tab-pane {
+        position: relative;
+        display: none;
+    }
+    .w--tab-active {
+        display: block;
+        opacity: 1;
+        transition: opacity 300ms ease 0s;
+    }
+    
+    .metric-label, .metric {
+        color: #f5f5f5;
+        text-decoration: none;
+    }
+
+    
+.treasury_chain-table-info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 0rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 0rem;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    border-radius: 4px;
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 300;
+    font-family: Poppins, sans-serif !important;
+  }
+  
+  .treasury-table-container{
+    padding: 0 !important;
+  }
+  
+  .treasury-table {
+    justify-items: stretch;
+    grid-auto-columns: 1fr;
+    grid-row-gap: 0px;
+    -ms-grid-columns: 2fr 1fr 1fr 0.25fr;
+    grid-template-columns: 2fr 1fr 1fr 0.25fr;
+    border-radius: 8px;
+    white-space: normal;
+  }
+  
+  .table-row {
+    display: -ms-grid;
+    display: grid;
+    padding: 0.75rem 1rem;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    -ms-grid-columns: 2fr 1fr 1fr 0.5fr;
+    grid-template-columns: 2fr 1fr 1fr 0.5fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    border-radius: 4px;
+  }
+  
+  .table-row.alt {
+    background-color: hsla(0, 0%, 100%, 0.03);
+  }
+  
+  .table-row.header {
+    height: 3rem;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .table-row.last {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+}
+@media screen and (max-width: 767px) {
+    .treasury-tabs_menu {
+        padding-right: 0.5rem !important;
+        -ms-grid-columns: 1fr  !important;
+        grid-template-columns: 1fr  !important;
+    }
+    .treasury_chart-block {
+        -ms-grid-column: 1 !important;
+        grid-column-start: 1 !important;
+        -ms-grid-row-span: 2 !important;
+        grid-row-end: 2 !important;
+        -ms-grid-column-span: 2 !important;
+        grid-column-end: 3 !important;
+    }
+}

@@ -1,0 +1,341 @@
+@import "../assets/styles/fonts.scss";
+
+@font-face {
+    font-family: 'webflow-icons';
+    src: url("data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMg8SBiUAAAC8AAAAYGNtYXDpP+a4AAABHAAAAFxnYXNwAAAAEAAAAXgAAAAIZ2x5ZmhS2XEAAAGAAAADHGhlYWQTFw3HAAAEnAAAADZoaGVhCXYFgQAABNQAAAAkaG10eCe4A1oAAAT4AAAAMGxvY2EDtALGAAAFKAAAABptYXhwABAAPgAABUQAAAAgbmFtZSoCsMsAAAVkAAABznBvc3QAAwAAAAAHNAAAACAAAwP4AZAABQAAApkCzAAAAI8CmQLMAAAB6wAzAQkAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADpAwPA/8AAQAPAAEAAAAABAAAAAAAAAAAAAAAgAAAAAAADAAAAAwAAABwAAQADAAAAHAADAAEAAAAcAAQAQAAAAAwACAACAAQAAQAg5gPpA//9//8AAAAAACDmAOkA//3//wAB/+MaBBcIAAMAAQAAAAAAAAAAAAAAAAABAAH//wAPAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEBIAAAAyADgAAFAAAJAQcJARcDIP5AQAGA/oBAAcABwED+gP6AQAABAOAAAALgA4AABQAAEwEXCQEH4AHAQP6AAYBAAcABwED+gP6AQAAAAwDAAOADQALAAA8AHwAvAAABISIGHQEUFjMhMjY9ATQmByEiBh0BFBYzITI2PQE0JgchIgYdARQWMyEyNj0BNCYDIP3ADRMTDQJADRMTDf3ADRMTDQJADRMTDf3ADRMTDQJADRMTAsATDSANExMNIA0TwBMNIA0TEw0gDRPAEw0gDRMTDSANEwAAAAABAJ0AtAOBApUABQAACQIHCQEDJP7r/upcAXEBcgKU/usBFVz+fAGEAAAAAAL//f+9BAMDwwAEAAkAABcBJwEXAwE3AQdpA5ps/GZsbAOabPxmbEMDmmz8ZmwDmvxmbAOabAAAAgAA/8AEAAPAAB0AOwAABSInLgEnJjU0Nz4BNzYzMTIXHgEXFhUUBw4BBwYjNTI3PgE3NjU0Jy4BJyYjMSIHDgEHBhUUFx4BFxYzAgBqXV6LKCgoKIteXWpqXV6LKCgoKIteXWpVSktvICEhIG9LSlVVSktvICEhIG9LSlVAKCiLXl1qal1eiygoKCiLXl1qal1eiygoZiEgb0tKVVVKS28gISEgb0tKVVVKS28gIQABAAABwAIAA8AAEgAAEzQ3PgE3NjMxFSIHDgEHBhUxIwAoKIteXWpVSktvICFmAcBqXV6LKChmISBvS0pVAAAAAgAA/8AFtgPAADIAOgAAARYXHgEXFhUUBw4BBwYHIxUhIicuAScmNTQ3PgE3NjMxOAExNDc+ATc2MzIXHgEXFhcVATMJATMVMzUEjD83NlAXFxYXTjU1PQL8kz01Nk8XFxcXTzY1PSIjd1BQWlJJSXInJw3+mdv+2/7c25MCUQYcHFg5OUA/ODlXHBwIAhcXTzY1PTw1Nk8XF1tQUHcjIhwcYUNDTgL+3QFt/pOTkwABAAAAAQAAmM7nP18PPPUACwQAAAAAANciZKUAAAAA1yJkpf/9/70FtgPDAAAACAACAAAAAAAAAAEAAAPA/8AAAAW3//3//QW2AAEAAAAAAAAAAAAAAAAAAAAMBAAAAAAAAAAAAAAAAgAAAAQAASAEAADgBAAAwAQAAJ0EAP/9BAAAAAQAAAAFtwAAAAAAAAAKABQAHgAyAEYAjACiAL4BFgE2AY4AAAABAAAADAA8AAMAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAADgCuAAEAAAAAAAEADQAAAAEAAAAAAAIABwCWAAEAAAAAAAMADQBIAAEAAAAAAAQADQCrAAEAAAAAAAUACwAnAAEAAAAAAAYADQBvAAEAAAAAAAoAGgDSAAMAAQQJAAEAGgANAAMAAQQJAAIADgCdAAMAAQQJAAMAGgBVAAMAAQQJAAQAGgC4AAMAAQQJAAUAFgAyAAMAAQQJAAYAGgB8AAMAAQQJAAoANADsd2ViZmxvdy1pY29ucwB3AGUAYgBmAGwAbwB3AC0AaQBjAG8AbgBzVmVyc2lvbiAxLjAAVgBlAHIAcwBpAG8AbgAgADEALgAwd2ViZmxvdy1pY29ucwB3AGUAYgBmAGwAbwB3AC0AaQBjAG8AbgBzd2ViZmxvdy1pY29ucwB3AGUAYgBmAGwAbwB3AC0AaQBjAG8AbgBzUmVndWxhcgBSAGUAZwB1AGwAYQByd2ViZmxvdy1pY29ucwB3AGUAYgBmAGwAbwB3AC0AaQBjAG8AbgBzRm9udCBnZW5lcmF0ZWQgYnkgSWNvTW9vbi4ARgBvAG4AdAAgAGcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAuAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  [class^="w-icon-"],
+  [class*=" w-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'webflow-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .w-icon-slider-right:before {
+    content: "\e600";
+  }
+  .w-icon-slider-left:before {
+    content: "\e601";
+  }
+  .w-icon-nav-menu:before {
+    content: "\e602";
+  }
+  .w-icon-arrow-down:before,
+  .w-icon-dropdown-toggle:before {
+    content: "\e603";
+  }
+  .w-icon-file-upload-remove:before {
+    content: "\e900";
+  }
+  .w-icon-file-upload-icon:before {
+    content: "\e903";
+  }
+
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    font-family: "Poppins, sans-serif";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield !important;
+}
+
+p {
+    margin: 0;
+}
+
+.web3modal-modal-lightbox {
+    z-index: 10 !important;
+    background: rgba(0, 0, 0, 0.2) !important;
+    backdrop-filter: blur(10px) !important;
+
+    .web3modal-modal-card {
+        background: #181b1c;
+        backdrop-filter: blur(100px);
+        border-radius: 10px;
+
+        .web3modal-provider-wrapper {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 0;
+            padding: 0;
+
+            .web3modal-provider-container {
+                background-color: rgb(0, 0, 0, 0);
+                border-radius: 0;
+
+                &:hover {
+                    background-color: rgb(0, 0, 0, 0.2);
+                }
+
+                .web3modal-provider-name {
+                    font-family: Montserrat SemiBold;
+                    font-weight: 600;
+                    font-size: 24px;
+                    text-align: center;
+                    color: #ffffff;
+                }
+
+                .web3modal-provider-description {
+                    font-family: Montserrat Light;
+                    font-weight: 300;
+                    font-size: 14px;
+                    text-align: center;
+                    color: rgba(255, 255, 255, 0.6);
+                }
+            }
+        }
+    }
+}
+
+.walletconnect-qrcode__base {
+    @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+        background: rgba(0, 0, 0, 0.2) !important;
+        backdrop-filter: blur(100px) !important;
+    }
+
+    /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+    @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .walletconnect-modal__base {
+        border-radius: 10px;
+        padding: 30px 20px 20px 20px;
+
+        @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+            background: #181b1c;
+            backdrop-filter: blur(100px);
+        }
+
+        /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+        @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+            background: #181b1c;
+        }
+
+        .walletconnect-modal__header {
+            .walletconnect-modal__headerLogo {
+                display: none;
+            }
+
+            p {
+                margin-left: 24px;
+
+                font-family: Montserrat SemiBold;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                color: #ffffff;
+            }
+
+            .walletconnect-modal__close__wrapper {
+                background: none;
+                right: 23px;
+
+                .walletconnect-modal__close__icon {
+                    .walletconnect-modal__close__line1 {
+                        border: 1px solid rgb(255, 255, 255);
+                    }
+                    .walletconnect-modal__close__line2 {
+                        border: 1px solid rgb(255, 255, 255);
+                    }
+                }
+            }
+        }
+
+        .walletconnect-modal__mobile__toggle {
+            margin-bottom: 20px;
+            background: none;
+            width: 60%;
+
+            .walletconnect-modal__mobile__toggle_selector {
+                height: 1px;
+                background: #ffffff;
+                top: 34px;
+            }
+
+            a {
+                font-family: Montserrat SemiBold;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                color: #ffffff;
+                cursor: pointer;
+
+                &:last-child {
+                    color: rgba(255, 255, 255, 0.6);
+                }
+            }
+        }
+
+        .walletconnect-modal__mobile__toggle.right__selected {
+            a {
+                &:nth-child(2) {
+                    color: rgba(255, 255, 255, 0.6);
+                }
+
+                &:last-child {
+                    color: #ffffff;
+                }
+            }
+        }
+
+        .walletconnect-qrcode__text {
+            font-family: Montserrat Light;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .walletconnect-qrcode__image {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 13px;
+        }
+
+        .walletconnect-modal__footer {
+            font-family: Montserrat Light;
+            font-weight: 300;
+            font-size: 14px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .walletconnect-modal__base__row {
+            h3 {
+                font-family: Montserrat SemiBold;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.MuiContainer-root {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+}
+
+.MuiTypography-h1 {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+    font-family: Merriweather, serif !important;
+    font-size: 2.5rem !important;
+    line-height: 1.2 !important;
+    font-weight: 300 !important;
+}
+
+.MuiTypography-h4 {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+    font-family: Poppins, sans-serif !important;
+    font-size: 1.125rem !important;
+    font-weight: 300 !important;
+}
+
+.divider-light {
+    background-color: hsla(0, 0%, 96.1%, 0.2) !important;
+}
+.divider-dark {
+    background-color: rgba(58, 58, 58, 0.2) !important;
+}
+.price-card-divider {
+    margin: 4rem 0 !important;
+}
+
+.MuiTypography-body1 {
+  font-family: Poppins, sans-serif !important;
+}
+
+.tab-content-show {
+    display: flex !important;
+    opacity: 1;
+    transition: opacity 300ms ease 0s;
+}
+.tab-content-hidden {
+    display: none !important;
+}
+.text-size-small {
+    font-size: 0.8125rem;
+}
+.container-lg {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+}
+
+.MuiTableCell-root {
+    font-family: Poppins, sans-serif !important;
+    font-size: 0.8rem !important;
+    color: #fff !important;
+    border-bottom: none !important;
+    padding: 12px !important;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.metric-label {
+    margin-bottom: 0.5rem !important;
+    font-size: 0.8rem !important;
+    line-height: 1.2 !important;
+    text-align: center;
+    letter-spacing: 1px !important;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgb(0 0 0 / 70%);
+    font-family: Poppins, sans-serif !important;
+}
+
+.metric {
+  font-family: Merriweather, serif !important;
+  font-size: 1.75rem !important;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgb(0 0 0 / 60%);
+}
+
+@media screen and (max-width: 479px) {
+  .metric-label {
+    font-size: 0.7rem !important;
+    letter-spacing: 0px !important;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .metric {
+    font-size: 1rem !important;
+    letter-spacing: -0.5px !important;
+  }
+}
